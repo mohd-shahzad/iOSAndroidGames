@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15F34" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PathLine" representedClassName="PathLine" syncable="YES" codeGenerationType="class">
+        <attribute name="pathLinePoints" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PersonTurn" representedClassName="PersonTurn" syncable="YES" codeGenerationType="class">
+        <attribute name="person1turn" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="person2turn" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PersonTurn" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="PathLine" positionX="-54" positionY="9" width="128" height="60"/>
+    </elements>
+</model>
