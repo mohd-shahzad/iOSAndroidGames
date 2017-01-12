@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MindSweeperDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dDp-Ns-4BG">
+                                <frame key="frameInset" minX="22" minY="36" maxX="18" maxY="252"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jc-Yz-wd1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="E0S-7I-q6I"/>
+                                    <constraint firstAttribute="width" constant="154" id="aoh-9b-xAW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AH-jj-6Uc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="C8y-9Z-7qf"/>
+                                    <constraint firstAttribute="height" constant="21" id="wnk-U9-XXV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS4-fr-GYu">
+                                <color key="backgroundColor" red="0.9649801254" green="0.42393842339999999" blue="0.25252160429999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="Ami-5M-u7p"/>
+                                    <constraint firstAttribute="height" constant="30" id="CJJ-QE-fnL"/>
+                                </constraints>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="refreshGamePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jf2-IK-dpU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fS4-fr-GYu" secondAttribute="bottom" constant="178" id="8ZC-nO-h2d"/>
+                            <constraint firstItem="7jc-Yz-wd1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="QBr-vc-MRW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7jc-Yz-wd1" secondAttribute="bottom" constant="223" id="SWy-p2-z7R"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7AH-jj-6Uc" secondAttribute="bottom" constant="223" id="c9D-Um-9zm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fS4-fr-GYu" secondAttribute="trailing" constant="9" id="f0E-PW-bvr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7AH-jj-6Uc" secondAttribute="trailing" constant="9" id="uDs-y7-QL0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boardView" destination="dDp-Ns-4BG" id="FHq-oW-cwe"/>
+                        <outlet property="scoreLabel" destination="7jc-Yz-wd1" id="9g6-SM-ltM"/>
+                        <outlet property="timeLabel" destination="7AH-jj-6Uc" id="LOM-CI-Hj8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224.80000000000001" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>
